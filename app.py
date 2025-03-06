@@ -8,7 +8,7 @@ from langchain_groq import ChatGroq
 from langchain.schema import HumanMessage
 from langchain.document_loaders import PyPDFLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
-os.environ["GROQ_API_KEY"] = "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"
+os.environ["GROQ_API_KEY"] = "paste_your_groq_key"
 llm = ChatGroq(model="llama3-8b-8192")  # Use LLaMA3 model for better analysis
 embedding_model = HuggingFaceEmbeddings()
 def process_pdf(file_path):
